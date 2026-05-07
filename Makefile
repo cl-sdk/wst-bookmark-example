@@ -5,3 +5,6 @@ ENV?=development
 LISP?=sbcl --sysinit ./.sbclrc
 
 LISPFLAGS=--non-interactive
+
+run:
+	$(LISP) $(LISPFLAGS) --eval "(ql:quickload :wst.example.bookmark-manager)"

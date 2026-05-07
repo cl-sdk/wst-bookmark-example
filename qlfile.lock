@@ -2,3 +2,7 @@
  (:class qlot/source/dist:source-dist
   :initargs (:distribution "https://beta.quicklisp.org/dist/quicklisp.txt" :%version :latest)
   :version "2026-01-01"))
+("wst" .
+ (:class qlot/source/github:source-github
+  :initargs (:repos "cl-sdk/wst" :ref nil :branch "main" :tag nil)
+  :version "github-39281c35a8f36bc07f178a80954c618f22931bf6"))
